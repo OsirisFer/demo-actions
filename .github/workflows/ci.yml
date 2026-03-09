@@ -34,4 +34,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy
-        run: echo "deploying..."
+        run: echo "deploying con password ${{ secrets.DB_PASSWORD }}"
+        env:
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
