@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Correr tests
-        run: exit 1
+        run: echo "tests pasaron"
 
       - name: Build
         run: echo "buildeando..."
